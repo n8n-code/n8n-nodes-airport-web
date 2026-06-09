@@ -8,7 +8,7 @@ import type {
 export class AirportWebApi implements ICredentialType {
 	name = 'N8nDevAirportWebApi';
 
-	displayName = 'airport-web API';
+	displayName = 'Airport Web API';
 
 	icon: Icon = { light: 'file:../nodes/AirportWeb/airport-web.png', dark: 'file:../nodes/AirportWeb/airport-web.dark.png' };
 
@@ -22,7 +22,7 @@ export class AirportWebApi implements ICredentialType {
 			default: '',
 			required: true,
 			placeholder: 'https://api.example.com',
-			description: 'The base URL of your airport-web API server',
+			description: 'The base URL of your Airport Web API server',
 		},
 		{
 			displayName: 'API Key',

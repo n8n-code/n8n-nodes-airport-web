@@ -3,14 +3,14 @@ import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from '
 
 export class AirportWeb implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'airport-web',
+		displayName: 'Airport Web',
 		name: 'N8nDevAirportWeb',
 		icon: { light: 'file:./airport-web.png', dark: 'file:./airport-web.dark.png' },
 		group: ['input'],
 		version: 1,
 		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
-		description: 'Get name and website-URL for airports by ICAO code. Covered airports are mostly in Germany',
-		defaults: { name: 'airport-web' },
+		description: 'Retrieve airport name and website URL by ICAO code, primarily German airports.',
+		defaults: { name: 'Airport Web' },
 		usableAsTool: true,
 		inputs: [NodeConnectionTypes.Main],
 		outputs: [NodeConnectionTypes.Main],
